@@ -46,7 +46,9 @@ User accounts in Azure Multi-Factor Authentication have the following three dist
 
 A user's state reflects whether an admin has enrolled them in Azure MFA, and whether they completed the registration process.
 
-All users start out *Disabled*. When you enroll users in Azure MFA, their state changes to *Enabled*. When enabled users sign in and complete the registration process, their state changes to *Enforced*.  
+All users start out *Disabled*. When you enroll users in Azure MFA, their state changes to *Enabled*. When enabled users sign in and complete the registration process, their state changes to *Enforced*. 
+
+*Note if the user already completed the registration process in the past through a conditional access policy, the states will not change to Enforced after Enabled for MFA.
 
 ### View the status for a user
 
